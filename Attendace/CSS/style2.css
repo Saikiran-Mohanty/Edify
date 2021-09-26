@@ -1,0 +1,49 @@
+*{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+	background: linear-gradient(120deg, #f0e006, #f75104);
+}
+h1{
+	font-family: sans-serif;
+	font-size: 2rem;
+	color: rgb(221, 37, 4);
+	text-shadow: 2px 1px 5px black;
+	text-align: center;
+}
+
+.form-row input{
+    border-radius: 20px;
+    padding: 10px;
+    margin:10px;
+    width: 90%;
+    border: 1px solid #999
+}
+.form-row label{
+    font-family: sans-serif;
+    font-size: 2.3rem;
+    color: darkred;
+}
+
+.form-row select{
+    border-radius: 20px;
+    padding: 9px;
+    margin:10px;
+    width: 90%;
+    border: 1px solid #999
+}
+.form-group input{
+    border-radius: 20px;
+    padding: 10px;
+    margin:10px;
+    width: 90%;
+    border: 1px solid #999
+}
+.form-group label{
+    font-family: sans-serif;
+    font-size: 2.3rem;
+    color: darkred;
+}

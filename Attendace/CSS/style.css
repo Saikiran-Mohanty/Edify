@@ -1,0 +1,62 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background-color: linear-gradient(120deg, #f0e006, #f75104);
+}
+.sign-up-form{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto;
+    text-align: center;
+}
+.sign-up-form h1{
+    color:#1c8adb;
+    margin-bottom: 30px;
+    
+}
+.sign-up-form input{
+    border-radius: 20px;
+    padding: 10px;
+    margin:10px;
+    width: 90%;
+    border: 1px solid #999
+}
+.Branch{
+    border-radius: 20px;
+    padding: 10px;
+    margin:10px;
+    width: 90%;
+    border: 1px solid #999
+}    
+.Year{
+    border-radius: 20px;
+    padding: 10px;
+    margin:10px;
+    width: 90%;
+    border: 1px solid #999
+}
+.Domain{
+    border-radius: 20px;
+    padding: 10px;
+    margin:10px;
+    width: 90%;
+    border: 1px solid #999
+}
+
+button{
+    color: #fff;
+    width : 90%;
+    padding:10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px;
+    border:none;
+    outline: none;
+    cursor:pointer;
+}
+.signup-btn{
+    background-color: #1c8adb;
+}
