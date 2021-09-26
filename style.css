@@ -1,0 +1,198 @@
+.connect-back{
+  background-image: url("source/connect.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.back{
+  background-image: url("source/black.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.receive-con{
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.receive-func{
+  margin-top: 20rem;
+  /* height: 10rem; */
+  /* width: 20rem; */
+  background-color: rgba(255, 255, 255, 0.466);
+}
+.nav{
+  position: absolute;
+  right: 7rem;
+  top: 2.5rem;
+  background: transparent;
+  font-size: 1.5rem;
+  z-index: +5;
+}
+.nav-link{
+  color: yellow;
+}
+.homeVideo{
+  margin-left: -9rem;
+  width: 100vw;
+  height:100vh;
+}
+
+.first-btn{
+  position: relative;
+  margin-top: -16rem;
+  margin-left: 25.5rem;
+  z-index: +5;
+}
+/* ========================Features======================== */
+.features{
+  position: relative;
+  margin-top: 14rem;
+  width: 100vw;
+  height: 100vh;
+  
+}
+.center{
+  text-align: center;
+  color: yellow;
+}
+.cards{
+  margin-left: 8rem;
+ padding:0rem 5rem;
+ color: white;
+}
+.card{
+  margin: 2rem;
+  background-color: rgba(255, 255, 255, 0.301);
+}
+.third{
+  color: white;
+}
+/* =============================Virtual Complilor=============================== */
+.header {
+  background: #57a958;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 4px;
+  font-family: sans-serif;
+}
+
+.lang-selector {
+  background-color: rgba(211, 211, 211, 0.438);
+  text-align: right;
+  padding: 4px;
+  font-family: sans-serif;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.languages {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+#editor { 
+  height: 400px;
+  color: white;
+  background-color: black;
+ }
+.code{
+  background-color: black;
+  color: white;
+}
+.button-container {
+  text-align: right;
+  padding: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.output {
+  background-color: black;
+  color: white;
+      padding: 4px;
+      border: 2px solid gray;
+      min-height: 100px;
+      width: 99%;
+      resize: none;
+
+}
+
+/* =====================Communication=========================== */
+.comunication{
+  height: 140vh;
+}
+
+#video-call-div {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#local-video {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  margin: 16px;
+  border-radius: 16px;
+  max-width: 20%;
+  max-height: 20%;
+  background: #ffffff;
+}
+
+#remote-video {
+  background: white;
+ border-radius: 20px;
+  width: 100%;
+  height: 65%;
+}
+
+.call-action-div {
+  position: absolute;
+  left: 45%;
+  bottom: 32px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: yellow;
+}
+.join-btn{
+  text-decoration: none;
+  color: yellow;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+.vid-btn{
+ position:relative;
+ 
+ margin-top: -35rem;
+ margin-left: 25rem;
+ text-align: right;
+ width: fit-content;
+ /* z-index: 10; */
+
+
+}
+
+/* =====================White Board=========================== */
+.five{
+  height: 100vh;
+}
+.board{
+  width: 100%;
+  height: 35rem;
+  
+}
+
+
+/* ************************ */

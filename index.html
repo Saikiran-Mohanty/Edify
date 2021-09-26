@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  <link rel="stylesheet" href="style.css">
+  <title>Edify</title>
+</head>
+
+<body>
+  <section class="first back">
+    <nav class="navigation">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Community</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <video src="source/home.mp4" loop autoplay class="homeVideo"></video>
+      <div class="first-btn">
+        <button type="button" class="btn btn-primary btn-lg ">Schedule</button>
+        <button type="button" class="btn btn-secondary btn-lg">Join as Student</button>
+      </div>
+    </div>
+  </section>
+  <section class="second back">
+    <div class="container features">
+      <h1 class="center">Features</h1>
+      <div class="row cards">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Virtual Environment</h5>
+            <p class="card-text">With this one can code on our website and can also convert a hand written code to text code.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Attendance</h5>
+            <p class="card-text">We maintain a database where teachers can create there own profile with student and class details. </p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Communiation</h5>
+            <p class="card-text">We include a peer to peer communication using WebRTC. Where teachers and student can interact face to face.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">White Board</h5>
+            <p class="card-text">We didnt forget the most essential tool that a teacher needs to explain students and clear their fundamentals with images and drawings.</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section class="third back">
+    <div class="container">
+      <h3>Upload Image => click convert</h3>
+      <div id="ocr">
+        <input type="file" accept="image/*">
+        <br>
+        <button id="start-ocr">convert</button>
+        <br>
+      </div>
+      <!-- ===============================Compilor================================ -->
+      <div class="virtual-compilor">
+        <div class="header">Virtual IDE</div>
+        <div class="lang-selector">
+          Select Language:
+          &nbsp;&nbsp;
+          <select id="languages" class="languages" onchange="changeLanguage">
+            <option value="c">C</option>
+            <option value="c++">C++</option>
+            <option value="php">PHP</option>
+            <option value="python">PYTHON</option>
+            <option value="node">NODE JS</option>
+          </select>
+        </div>
+      
+        <div class="editor" id="editor">
+          <textarea name="" id="msg" cols="150" rows="16" class="code"></textarea>
+        </div>
+        <div class="button-container">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary" type="button">Run</button>
+          </div>
+        </div>
+        <div>
+          
+          <textarea  id="" cols="148" rows="10" class="output" id="output" ></textarea>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ================================================================ -->
+  <section class="fourth connect-back">
+    <div class="container">
+      <h1 class="center">Connect</h1>
+      <div class="comunication">
+        <div>
+          <input placeholder="Enter UserCode" type="text" id="username-input" />
+          <br>
+          <button onclick="sendUsername()" class="btn btn-primary">Send</button>
+          <button onclick="startCall()" class="btn btn-success">Start Call</button>
+         <a href="receiver.html" class="join-btn">Join</a>
+      </div>
+      <div id="video-call-div">
+          <video muted id="local-video" autoplay></video>
+          <video id="remote-video" autoplay></video>
+          <div class="call-action-div vid-btn">
+              <button onclick="muteVideo()">Mute Video</button>
+              <button onclick="muteAudio()">Mute Audio</button>
+          </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="five back">
+    <h1 class="center">Virtual Board</h1>
+    <div class="container">
+      <div class="board"  id="wt-container"></div>
+
+    <script src="https://www.whiteboard.team/dist/api.js"></script>
+    <script type="text/javascript">
+        var wt = new api.WhiteboardTeam('#wt-container', {
+            clientId: 'fc6b47569de8b365925d5827e2abb7d1',
+            boardCode: '57e3b98572b8647f7e0bebe0f30f2601'
+        });
+    </script>
+    </div>
+  </section>
+</body>
+<script src="sender.js"></script>
+<script src="main.js"></script>
+<script src="connect.js"></script>
+<!-- <script src="server.js"></script> -->
+</html>
